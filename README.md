@@ -52,7 +52,19 @@ Socket programming finds applications in various domains, including web developm
 3.	File Transfer Protocol: Protocols like FTP (File Transfer Protocol) utilize socket programming for transferring files between a client and a server.
 4.	Networked Games: Online multiplayer games rely on socket programming to facilitate communication between game clients and servers.
 5.	RPC mechanisms: which allow processes to execute code on a remote server, often use socket programming for communication.
-
+### EXPLAINATION
+```
+socket.socket() – Creates a new socket object that acts as an endpoint for network communication.
+bind(address) – Assigns a specific IP address and port number to the socket.
+listen(backlog) – Puts the socket into server mode and waits for incoming connection requests.
+accept() – Accepts a client connection and returns a new socket object along with the client's address.
+connect(address) – Establishes a connection from a client socket to a remote server.
+connect_ex(address) – Attempts to connect like connect(), but returns an error code instead of raising an exception.
+send(data) – Sends bytes of data through a connected socket.
+recv(bufsize) – Receives up to bufsize bytes of data from the socket.
+sendall(data) – Sends all the data, continuing until every byte has been transmitted.
+close() – Terminates the socket connection and releases the associated resources.
+```
 
 ## Result:
 Thus the study of Socket Programming Completed Successfully
